@@ -1,4 +1,5 @@
 import React from 'react';
+import CalendarSquare from '../CalendarSquare';
 
 interface CalendarDisplayProps { 
   currentMonth: string,
@@ -10,6 +11,7 @@ function CalendarDisplay({ currentMonth, currentYear }: CalendarDisplayProps) {
     <>
       <h1>Calendar</h1>
       <p>{currentMonth} {currentYear}</p>
+      <CalendarSquare />
     </>
   );
 }
